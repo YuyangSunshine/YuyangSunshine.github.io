@@ -1009,3 +1009,40 @@ sup { font-size: 0.65em; color: var(--secondary); }
         padding: 24px 20px;
     }
 }
+
+/* ==========================================
+   Visitor Statistics Section
+   ========================================== */
+.stats-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 30px auto 0;
+}
+
+.stats-globe {
+    flex-shrink: 0;
+}
+
+.stats-counter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.stats-counter img {
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+}
+
+@media (max-width: 700px) {
+    .stats-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+}
