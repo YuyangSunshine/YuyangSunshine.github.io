@@ -613,156 +613,146 @@ img { max-width: 100%; height: auto; }
 }
 
 /* ==========================================
-   Latest Research Section - Large Cards
+   Latest Research Section - 大卡片布局
    ========================================== */
 .research-list {
     display: flex;
     flex-direction: column;
-    gap: 24px;
-    margin-top: 10px;
+    gap: 30px;
+    margin-top: 20px;
 }
 
 .research-card-large {
     display: grid;
-    grid-template-columns: 380px 1fr;
-    gap: 28px;
-    background: white;
-    border-radius: var(--radius);
+    grid-template-columns: 400px 1fr;
+    background: #ffffff;
     border: 1px solid var(--border);
+    border-radius: 12px;
     overflow: hidden;
+    box-shadow: var(--shadow-sm);
     transition: var(--transition);
 }
 
 .research-card-large:hover {
     box-shadow: var(--shadow-lg);
-    border-color: rgba(14, 165, 233, 0.3);
+    border-color: var(--secondary);
+    transform: translateY(-2px);
 }
 
-.research-media-large {
+/* 媒体区域 - 自适应 */
+.research-media-wrapper {
     position: relative;
-    height: 100%;
-    min-height: 280px;
-    overflow: hidden;
-    background: var(--bg-alt);
-}
-
-.research-media-large img,
-.research-media-large video,
-.research-media-large iframe {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.research-media-large iframe {
-    border: none;
-}
-
-.media-link {
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
-
-.play-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.4);
+    background: #f1f5f9;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: white;
-    opacity: 0;
-    transition: var(--transition);
+    overflow: hidden;
 }
 
-.media-link:hover .play-overlay {
-    opacity: 1;
+.research-media-wrapper img,
+.research-media-wrapper video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;  /* 保持比例，不裁剪 */
+    background: #f1f5f9;
 }
 
-.play-overlay i {
-    font-size: 3rem;
-    margin-bottom: 8px;
+/* 如果想要填充效果，可以改成 object-fit: cover; */
+
+.research-media-wrapper video {
+    min-height: 250px;
 }
 
-.play-overlay span {
-    font-size: 0.9rem;
-    font-weight: 600;
-}
-
-.research-badge {
+/* 标签 */
+.research-tag {
     position: absolute;
-    top: 12px;
-    left: 12px;
-    padding: 5px 14px;
-    background: rgba(30, 58, 95, 0.9);
+    top: 14px;
+    left: 14px;
+    padding: 6px 14px;
+    background: var(--primary);
     color: white;
     font-size: 0.75rem;
     font-weight: 700;
     border-radius: 6px;
-    backdrop-filter: blur(4px);
+    letter-spacing: 0.3px;
     z-index: 10;
 }
 
-.research-badge.badge-demo {
-    background: rgba(14, 165, 233, 0.9);
+.research-tag.tag-demo {
+    background: var(--secondary);
 }
 
-.research-content-large {
-    padding: 24px 24px 24px 0;
+.research-tag.tag-survey {
+    background: #8b5cf6;
+}
+
+/* 内容区域 */
+.research-info {
+    padding: 28px;
     display: flex;
     flex-direction: column;
 }
 
-.research-content-large h3 {
-    font-size: 1.15rem;
+.research-info h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
     color: var(--primary);
-    margin-bottom: 12px;
     line-height: 1.45;
+    margin-bottom: 14px;
 }
 
-.research-desc-full {
+.research-summary {
     font-size: 0.92rem;
     color: var(--text-light);
-    line-height: 1.7;
-    margin-bottom: 14px;
+    line-height: 1.75;
+    margin-bottom: 16px;
 }
 
-.research-highlights {
+/* 特性列表 */
+.research-features {
     list-style: none;
-    margin-bottom: 14px;
-    padding: 14px;
-    background: var(--bg-alt);
-    border-radius: 8px;
+    padding: 16px 18px;
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+    border-radius: 10px;
+    margin-bottom: 18px;
+    border-left: 4px solid var(--secondary);
 }
 
-.research-highlights li {
+.research-features li {
     font-size: 0.88rem;
     color: var(--text);
-    padding: 5px 0;
+    padding: 6px 0;
     display: flex;
     align-items: flex-start;
     gap: 10px;
+    line-height: 1.5;
 }
 
-.research-highlights li i {
+.research-features li i {
     color: var(--secondary);
-    margin-top: 3px;
+    margin-top: 4px;
     flex-shrink: 0;
+    font-size: 0.8rem;
+}
+
+/* 底部：元信息 + 按钮 */
+.research-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: auto;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
 }
 
 .research-meta {
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 18px;
     font-size: 0.85rem;
     color: var(--text-muted);
-    margin-bottom: 14px;
 }
 
 .research-meta span {
@@ -773,22 +763,22 @@ img { max-width: 100%; height: auto; }
 
 .research-meta i {
     color: var(--secondary);
+    font-size: 0.9rem;
 }
 
-.research-links {
+.research-actions {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    margin-top: auto;
 }
 
-.btn-research {
+.btn-action {
     display: inline-flex;
     align-items: center;
-    gap: 6px;
-    padding: 8px 18px;
-    background: var(--bg-alt);
-    border: 1px solid var(--border);
+    gap: 7px;
+    padding: 9px 18px;
+    background: white;
+    border: 2px solid var(--border);
     border-radius: 8px;
     font-size: 0.85rem;
     font-weight: 600;
@@ -796,53 +786,63 @@ img { max-width: 100%; height: auto; }
     transition: var(--transition);
 }
 
-.btn-research:hover {
+.btn-action:hover {
     background: var(--secondary);
     border-color: var(--secondary);
     color: white;
 }
 
-/* Responsive for Research Cards */
+.btn-action i {
+    font-size: 1rem;
+}
+
+/* ==========================================
+   Research Section 响应式
+   ========================================== */
 @media (max-width: 900px) {
     .research-card-large {
         grid-template-columns: 1fr;
     }
     
-    .research-media-large {
-        min-height: 220px;
-        max-height: 250px;
+    .research-media-wrapper {
+        max-height: 300px;
     }
     
-    .research-content-large {
+    .research-media-wrapper video {
+        min-height: 200px;
+    }
+}
+
+@media (max-width: 600px) {
+    .research-info {
         padding: 20px;
     }
-}
-
-@media (max-width: 480px) {
-    .research-media-large {
-        min-height: 180px;
+    
+    .research-info h3 {
+        font-size: 1.08rem;
     }
     
-    .research-content-large h3 {
-        font-size: 1.05rem;
+    .research-summary {
+        font-size: 0.88rem;
     }
     
-    .research-highlights {
-        padding: 12px;
+    .research-features {
+        padding: 14px;
     }
     
-    .research-highlights li {
+    .research-features li {
         font-size: 0.82rem;
     }
-}
-
-
-
-@media (max-width: 480px) {
-    h1, .profile-info h1 { font-size: 1.6rem; }
-    .chinese-name { font-size: 1.1rem; }
-    .profile-image img { width: 110px; height: 110px; }
-    .research-media { height: 150px; }
+    
+    .research-footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .btn-action {
+        padding: 8px 14px;
+        font-size: 0.8rem;
+    }
 }
 
 /* Animation */
