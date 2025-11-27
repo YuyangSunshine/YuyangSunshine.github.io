@@ -190,110 +190,344 @@
         
         <div class="research-list">
             <!-- Research Item 1: AI4S LAB -->
-            <div class="research-card-large">
-                <div class="research-media-large">
-                    <!-- 如果有视频链接，用图片+播放按钮 -->
-                    <a href="https://ai4slab.pkusz.edu.cn/" target="_blank" class="media-link">
+            <article class="research-card-large">
+                <div class="research-media-wrapper">
+                    <video autoplay loop muted playsinline>
+                        <source src="assets/videos/ai4slab.mp4" type="video/mp4">
+                        <!-- 如果视频加载失败，显示图片 -->
                         <img src="assets/images/research/ai4slab.jpg" alt="AI4S LAB Platform">
-                        <div class="play-overlay">
-                            <i class="fas fa-play-circle"></i>
-                            <span>View Demo</span>
-                        </div>
-                    </a>
-                    <div class="research-badge badge-demo">Platform Demo</div>
+                    </video>
+                    <span class="research-tag tag-demo">Platform Demo</span>
                 </div>
-                <div class="research-content-large">
+                <div class="research-info">
                     <h3>AI4S LAB: The World's First "One-Stop" Digital Intelligent Life Science Research Platform</h3>
-                    <p class="research-desc-full">
+                    <p class="research-summary">
                         As the world's first "one-stop" digital and intelligent life science research platform, 
                         <strong>AI4S LAB</strong> deeply integrates four key elements: computing power, data, models, and experiments. 
                         Relying on the AI4S native multi-agent system <strong>BIOMA</strong>, independently developed by Peking University Shenzhen Graduate School, 
                         the platform achieves a closed-loop process encompassing <em>"theoretical prediction → experimental design → automated execution → data analysis"</em>.
                     </p>
-                    <ul class="research-highlights">
-                        <li><i class="fas fa-check-circle"></i> 15+ professional datasets & 22 sets of high-throughput intelligent experimental equipment</li>
-                        <li><i class="fas fa-check-circle"></i> Natural language dialogue for AI-driven experimental design</li>
-                        <li><i class="fas fa-check-circle"></i> 30x efficiency improvement over traditional methods</li>
-                        <li><i class="fas fa-check-circle"></i> Full-chain digital intelligence: "dry-wet closed loop"</li>
+                    <ul class="research-features">
+                        <li><i class="fas fa-check"></i> 15+ professional datasets & 22 sets of high-throughput intelligent experimental equipment</li>
+                        <li><i class="fas fa-check"></i> Natural language dialogue for AI-driven experimental design</li>
+                        <li><i class="fas fa-check"></i> 30x efficiency improvement over traditional methods</li>
+                        <li><i class="fas fa-check"></i> Full-chain digital intelligence: "dry-wet closed loop"</li>
                     </ul>
-                    <div class="research-meta">
-                        <span><i class="fas fa-users"></i> <strong>Yuyang Liu</strong>, et al.</span>
-                        <span><i class="fas fa-calendar"></i> 2025</span>
-                        <span><i class="fas fa-university"></i> PKU Shenzhen</span>
-                    </div>
-                    <div class="research-links">
-                        <a href="https://ai4slab.pkusz.edu.cn/" target="_blank" class="btn-research">
-                            <i class="fas fa-globe"></i> Project Page
-                        </a>
+                    <div class="research-footer">
+                        <div class="research-meta">
+                            <span><i class="fas fa-users"></i> <strong>Yuyang Liu</strong>, et al.</span>
+                            <span><i class="fas fa-calendar-alt"></i> 2025</span>
+                        </div>
+                        <div class="research-actions">
+                            <a href="https://ai4slab.pkusz.edu.cn/" target="_blank" class="btn-action">
+                                <i class="fas fa-globe"></i> Project Page
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </article>
 
             <!-- Research Item 2: BioProBench -->
-            <div class="research-card-large">
-                <div class="research-media-large">
+            <article class="research-card-large">
+                <div class="research-media-wrapper">
                     <img src="assets/images/research/bioprobench.jpg" alt="BioProBench">
-                    <div class="research-badge">Preprint</div>
+                    <span class="research-tag">Preprint</span>
                 </div>
-                <div class="research-content-large">
+                <div class="research-info">
                     <h3>BioProBench: Comprehensive Benchmark for Biological Protocol Understanding and Reasoning</h3>
-                    <p class="research-desc-full">
+                    <p class="research-summary">
                         We introduce <strong>BioProBench</strong> – the first large-scale, multi-task benchmark for biological protocol understanding & reasoning. 
                         This benchmark accelerates development of LLMs that truly understand lab procedures, improves reproducibility & safety in automated workflows, 
                         and guides researchers toward robust AI-driven experimental design.
                     </p>
-                    <ul class="research-highlights">
+                    <ul class="research-features">
                         <li><i class="fas fa-database"></i> <strong>27K</strong> real-world protocols</li>
                         <li><i class="fas fa-tasks"></i> <strong>556K</strong> structured instances across 5 core tasks</li>
-                        <li><i class="fas fa-list-check"></i> Protocol QA, Step Ordering, Error Correction, Generation & Reasoning</li>
+                        <li><i class="fas fa-list-ul"></i> Protocol QA, Step Ordering, Error Correction, Generation & Reasoning</li>
                     </ul>
-                    <div class="research-meta">
-                        <span><i class="fas fa-users"></i> <strong>Yuyang Liu</strong>, et al.</span>
-                        <span><i class="fas fa-calendar"></i> 2025</span>
-                    </div>
-                    <div class="research-links">
-                        <a href="https://arxiv.org/pdf/2505.07889" target="_blank" class="btn-research">
-                            <i class="ai ai-arxiv"></i> arXiv
-                        </a>
-                        <a href="https://github.com/YuyangSunshine/bioprotocolbench" target="_blank" class="btn-research">
-                            <i class="fab fa-github"></i> Code
-                        </a>
+                    <div class="research-footer">
+                        <div class="research-meta">
+                            <span><i class="fas fa-users"></i> <strong>Yuyang Liu</strong>, et al.</span>
+                            <span><i class="fas fa-calendar-alt"></i> 2025</span>
+                        </div>
+                        <div class="research-actions">
+                            <a href="https://arxiv.org/pdf/2505.07889" target="_blank" class="btn-action">
+                                <i class="ai ai-arxiv"></i> arXiv
+                            </a>
+                            <a href="https://github.com/YuyangSunshine/bioprotocolbench" target="_blank" class="btn-action">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </article>
 
             <!-- Research Item 3: CL for VLMs Survey -->
-            <div class="research-card-large">
-                <div class="research-media-large">
+            <article class="research-card-large">
+                <div class="research-media-wrapper">
                     <img src="assets/images/research/clvlm.jpg" alt="Continual Learning for VLMs Survey">
-                    <div class="research-badge">Survey</div>
+                    <span class="research-tag tag-survey">Survey</span>
                 </div>
-                <div class="research-content-large">
+                <div class="research-info">
                     <h3>Continual Learning for Vision-Language Models: A Survey and Taxonomy Beyond Forgetting</h3>
-                    <p class="research-desc-full">
+                    <p class="research-summary">
                         As Vision-Language Models (VLMs) achieve impressive success on multimodal tasks, a key challenge remains: 
                         <em>How can they learn continually without catastrophically forgetting prior knowledge?</em>
                         We offer the first focused and systematic review of the VLM-CL field, serving as a comprehensive diagnostic reference for developing lifelong vision-language systems.
                     </p>
-                    <ul class="research-highlights">
+                    <ul class="research-features">
                         <li><i class="fas fa-lightbulb"></i> <strong>Three Core Challenges:</strong> Cross-Modal Feature Drift, Shared Module Interference, Zero-Shot Erosion</li>
                         <li><i class="fas fa-sitemap"></i> <strong>Novel Taxonomy:</strong> Multi-Modal Replay, Cross-Modal Regularization, Parameter-Efficient Adaptation</li>
-                        <li><i class="fas fa-book"></i> Comprehensive analysis of evaluation protocols, datasets, and metrics</li>
+                        <li><i class="fas fa-book-open"></i> Comprehensive analysis of evaluation protocols, datasets, and metrics</li>
                     </ul>
-                    <div class="research-meta">
-                        <span><i class="fas fa-users"></i> <strong>Yuyang Liu</strong>, et al.</span>
-                        <span><i class="fas fa-calendar"></i> 2025</span>
-                    </div>
-                    <div class="research-links">
-                        <a href="https://arxiv.org/pdf/2508.04227" target="_blank" class="btn-research">
-                            <i class="ai ai-arxiv"></i> arXiv
-                        </a>
-                        <a href="https://github.com/YuyangSunshine/Awesome-Continual-learning-of-Vision-Language-Models" target="_blank" class="btn-research">
-                            <i class="fab fa-github"></i> Awesome List
-                        </a>
+                    <div class="research-footer">
+                        <div class="research-meta">
+                            <span><i class="fas fa-users"></i> <strong>Yuyang Liu</strong>, et al.</span>
+                            <span><i class="fas fa-calendar-alt"></i> 2025</span>
+                        </div>
+                        <div class="research-actions">
+                            <a href="https://arxiv.org/pdf/2508.04227" target="_blank" class="btn-action">
+                                <i class="ai ai-arxiv"></i> arXiv
+                            </a>
+                            <a href="https://github.com/YuyangSunshine/Awesome-Continual-learning-of-Vision-Language-Models" target="_blank" class="btn-action">
+                                <i class="fab fa-github"></i> Awesome List
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </article>
+        </div>
+    </div>
+</section><!-- Latest Research Section -->
+<section id="research" class="section">
+    <div class="container">
+        <h2 class="section-title">Latest Research</h2>
+        <p class="section-subtitle">Recent preprints, demos, and ongoing projects</p>
+        
+        <div class="research-list">
+            <!-- Research Item 1: AI4S LAB -->
+            <article class="research-card-large">
+                <div class="research-media-wrapper">
+                    <video autoplay loop muted playsinline>
+                        <source src="assets/videos/ai4slab.mp4" type="video/mp4">
+                        <!-- 如果视频加载失败，显示图片 -->
+                        <img src="assets/images/research/ai4slab.jpg" alt="AI4S LAB Platform">
+                    </video>
+                    <span class="research-tag tag-demo">Platform Demo</span>
+                </div>
+                <div class="research-info">
+                    <h3>AI4S LAB: The World's First "One-Stop" Digital Intelligent Life Science Research Platform</h3>
+                    <p class="research-summary">
+                        As the world's first "one-stop" digital and intelligent life science research platform, 
+                        <strong>AI4S LAB</strong> deeply integrates four key elements: computing power, data, models, and experiments. 
+                        Relying on the AI4S native multi-agent system <strong>BIOMA</strong>, independently developed by Peking University Shenzhen Graduate School, 
+                        the platform achieves a closed-loop process encompassing <em>"theoretical prediction → experimental design → automated execution → data analysis"</em>.
+                    </p>
+                    <ul class="research-features">
+                        <li><i class="fas fa-check"></i> 15+ professional datasets & 22 sets of high-throughput intelligent experimental equipment</li>
+                        <li><i class="fas fa-check"></i> Natural language dialogue for AI-driven experimental design</li>
+                        <li><i class="fas fa-check"></i> 30x efficiency improvement over traditional methods</li>
+                        <li><i class="fas fa-check"></i> Full-chain digital intelligence: "dry-wet closed loop"</li>
+                    </ul>
+                    <div class="research-footer">
+                        <div class="research-meta">
+                            <span><i class="fas fa-users"></i> <strong>Yuyang Liu</strong>, et al.</span>
+                            <span><i class="fas fa-calendar-alt"></i> 2025</span>
+                        </div>
+                        <div class="research-actions">
+                            <a href="https://ai4slab.pkusz.edu.cn/" target="_blank" class="btn-action">
+                                <i class="fas fa-globe"></i> Project Page
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Research Item 2: BioProBench -->
+            <article class="research-card-large">
+                <div class="research-media-wrapper">
+                    <img src="assets/images/research/bioprobench.jpg" alt="BioProBench">
+                    <span class="research-tag">Preprint</span>
+                </div>
+                <div class="research-info">
+                    <h3>BioProBench: Comprehensive Benchmark for Biological Protocol Understanding and Reasoning</h3>
+                    <p class="research-summary">
+                        We introduce <strong>BioProBench</strong> – the first large-scale, multi-task benchmark for biological protocol understanding & reasoning. 
+                        This benchmark accelerates development of LLMs that truly understand lab procedures, improves reproducibility & safety in automated workflows, 
+                        and guides researchers toward robust AI-driven experimental design.
+                    </p>
+                    <ul class="research-features">
+                        <li><i class="fas fa-database"></i> <strong>27K</strong> real-world protocols</li>
+                        <li><i class="fas fa-tasks"></i> <strong>556K</strong> structured instances across 5 core tasks</li>
+                        <li><i class="fas fa-list-ul"></i> Protocol QA, Step Ordering, Error Correction, Generation & Reasoning</li>
+                    </ul>
+                    <div class="research-footer">
+                        <div class="research-meta">
+                            <span><i class="fas fa-users"></i> <strong>Yuyang Liu</strong>, et al.</span>
+                            <span><i class="fas fa-calendar-alt"></i> 2025</span>
+                        </div>
+                        <div class="research-actions">
+                            <a href="https://arxiv.org/pdf/2505.07889" target="_blank" class="btn-action">
+                                <i class="ai ai-arxiv"></i> arXiv
+                            </a>
+                            <a href="https://github.com/YuyangSunshine/bioprotocolbench" target="_blank" class="btn-action">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Research Item 3: CL for VLMs Survey -->
+            <article class="research-card-large">
+                <div class="research-media-wrapper">
+                    <img src="assets/images/research/clvlm.jpg" alt="Continual Learning for VLMs Survey">
+                    <span class="research-tag tag-survey">Survey</span>
+                </div>
+                <div class="research-info">
+                    <h3>Continual Learning for Vision-Language Models: A Survey and Taxonomy Beyond Forgetting</h3>
+                    <p class="research-summary">
+                        As Vision-Language Models (VLMs) achieve impressive success on multimodal tasks, a key challenge remains: 
+                        <em>How can they learn continually without catastrophically forgetting prior knowledge?</em>
+                        We offer the first focused and systematic review of the VLM-CL field, serving as a comprehensive diagnostic reference for developing lifelong vision-language systems.
+                    </p>
+                    <ul class="research-features">
+                        <li><i class="fas fa-lightbulb"></i> <strong>Three Core Challenges:</strong> Cross-Modal Feature Drift, Shared Module Interference, Zero-Shot Erosion</li>
+                        <li><i class="fas fa-sitemap"></i> <strong>Novel Taxonomy:</strong> Multi-Modal Replay, Cross-Modal Regularization, Parameter-Efficient Adaptation</li>
+                        <li><i class="fas fa-book-open"></i> Comprehensive analysis of evaluation protocols, datasets, and metrics</li>
+                    </ul>
+                    <div class="research-footer">
+                        <div class="research-meta">
+                            <span><i class="fas fa-users"></i> <strong>Yuyang Liu</strong>, et al.</span>
+                            <span><i class="fas fa-calendar-alt"></i> 2025</span>
+                        </div>
+                        <div class="research-actions">
+                            <a href="https://arxiv.org/pdf/2508.04227" target="_blank" class="btn-action">
+                                <i class="ai ai-arxiv"></i> arXiv
+                            </a>
+                            <a href="https://github.com/YuyangSunshine/Awesome-Continual-learning-of-Vision-Language-Models" target="_blank" class="btn-action">
+                                <i class="fab fa-github"></i> Awesome List
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+    
+</section><!-- Latest Research Section -->
+<section id="research" class="section">
+    <div class="container">
+        <h2 class="section-title">Latest Research</h2>
+        <p class="section-subtitle">Recent preprints, demos, and ongoing projects</p>
+        
+        <div class="research-list">
+            <!-- Research Item 1: AI4S LAB -->
+            <article class="research-card-large">
+                <div class="research-media-wrapper">
+                    <video autoplay loop muted playsinline>
+                        <source src="assets/videos/ai4slab.mp4" type="video/mp4">
+                        <img src="assets/images/research/ai4slab.jpg" alt="AI4S LAB Platform">
+                    </video>
+                    <span class="research-tag tag-demo">Platform Demo</span>
+                </div>
+                <div class="research-info">
+                    <h3>AI4S LAB: The World's First "One-Stop" Digital Intelligent Life Science Research Platform</h3>
+                    <p class="research-summary">
+                        As the world's first "one-stop" digital and intelligent life science research platform, 
+                        <strong>AI4S LAB</strong> deeply integrates four key elements: computing power, data, models, and experiments. 
+                        Relying on the AI4S native multi-agent system <strong>BIOMA</strong>, independently developed by Peking University Shenzhen Graduate School, 
+                        the platform achieves a closed-loop process encompassing <em>"theoretical prediction → experimental design → automated execution → data analysis"</em>.
+                    </p>
+                    <ul class="research-features">
+                        <li><i class="fas fa-check"></i> 15+ professional datasets & 22 sets of high-throughput intelligent experimental equipment</li>
+                        <li><i class="fas fa-check"></i> Natural language dialogue for AI-driven experimental design</li>
+                        <li><i class="fas fa-check"></i> 30x efficiency improvement over traditional methods</li>
+                        <li><i class="fas fa-check"></i> Full-chain digital intelligence: "dry-wet closed loop"</li>
+                    </ul>
+                    <div class="research-footer">
+                        <div class="research-meta">
+                            <span><i class="fas fa-users"></i> <strong>Yuyang Liu</strong>, et al.</span>
+                            <span><i class="fas fa-calendar-alt"></i> 2025</span>
+                        </div>
+                        <div class="research-actions">
+                            <a href="https://ai4slab.pkusz.edu.cn/" target="_blank" class="btn-action">
+                                <i class="fas fa-globe"></i> Project Page
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Research Item 2: BioProBench -->
+            <article class="research-card-large">
+                <div class="research-media-wrapper">
+                    <img src="assets/images/research/bioprobench.jpg" alt="BioProBench">
+                    <span class="research-tag">Preprint</span>
+                </div>
+                <div class="research-info">
+                    <h3>BioProBench: Comprehensive Benchmark for Biological Protocol Understanding and Reasoning</h3>
+                    <p class="research-summary">
+                        We introduce <strong>BioProBench</strong> – the first large-scale, multi-task benchmark for biological protocol understanding & reasoning. 
+                        This benchmark accelerates development of LLMs that truly understand lab procedures, improves reproducibility & safety in automated workflows, 
+                        and guides researchers toward robust AI-driven experimental design.
+                    </p>
+                    <ul class="research-features">
+                        <li><i class="fas fa-database"></i> <strong>27K</strong> real-world protocols</li>
+                        <li><i class="fas fa-tasks"></i> <strong>556K</strong> structured instances across 5 core tasks</li>
+                        <li><i class="fas fa-list-ul"></i> Protocol QA, Step Ordering, Error Correction, Generation & Reasoning</li>
+                    </ul>
+                    <div class="research-footer">
+                        <div class="research-meta">
+                            <span><i class="fas fa-users"></i> <strong>Yuyang Liu</strong>, et al.</span>
+                            <span><i class="fas fa-calendar-alt"></i> 2025</span>
+                        </div>
+                        <div class="research-actions">
+                            <a href="https://arxiv.org/pdf/2505.07889" target="_blank" class="btn-action">
+                                <i class="ai ai-arxiv"></i> arXiv
+                            </a>
+                            <a href="https://github.com/YuyangSunshine/bioprotocolbench" target="_blank" class="btn-action">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Research Item 3: CL for VLMs Survey -->
+            <article class="research-card-large">
+                <div class="research-media-wrapper">
+                    <img src="assets/images/research/clvlm.jpg" alt="Continual Learning for VLMs Survey">
+                    <span class="research-tag tag-survey">Survey</span>
+                </div>
+                <div class="research-info">
+                    <h3>Continual Learning for Vision-Language Models: A Survey and Taxonomy Beyond Forgetting</h3>
+                    <p class="research-summary">
+                        As Vision-Language Models (VLMs) achieve impressive success on multimodal tasks, a key challenge remains: 
+                        <em>How can they learn continually without catastrophically forgetting prior knowledge?</em>
+                        We offer the first focused and systematic review of the VLM-CL field, serving as a comprehensive diagnostic reference for developing lifelong vision-language systems.
+                    </p>
+                    <ul class="research-features">
+                        <li><i class="fas fa-lightbulb"></i> <strong>Three Core Challenges:</strong> Cross-Modal Feature Drift, Shared Module Interference, Zero-Shot Erosion</li>
+                        <li><i class="fas fa-sitemap"></i> <strong>Novel Taxonomy:</strong> Multi-Modal Replay, Cross-Modal Regularization, Parameter-Efficient Adaptation</li>
+                        <li><i class="fas fa-book-open"></i> Comprehensive analysis of evaluation protocols, datasets, and metrics</li>
+                    </ul>
+                    <div class="research-footer">
+                        <div class="research-meta">
+                            <span><i class="fas fa-users"></i> <strong>Yuyang Liu</strong>, et al.</span>
+                            <span><i class="fas fa-calendar-alt"></i> 2025</span>
+                        </div>
+                        <div class="research-actions">
+                            <a href="https://arxiv.org/pdf/2508.04227" target="_blank" class="btn-action">
+                                <i class="ai ai-arxiv"></i> arXiv
+                            </a>
+                            <a href="https://github.com/YuyangSunshine/Awesome-Continual-learning-of-Vision-Language-Models" target="_blank" class="btn-action">
+                                <i class="fab fa-github"></i> Awesome List
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
         </div>
     </div>
 </section>
