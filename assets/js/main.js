@@ -38,21 +38,22 @@ if (showMoreBtn) {
 
 // Publication Filter
 const filterBtns = document.querySelectorAll('.filter-btn');
-const pubItems = document.querySelectorAll('.pub-item');
+const pubCards = document.querySelectorAll('.pub-card');
 
 filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
+        // Update active button
         filterBtns.forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
         
         const filter = btn.dataset.filter;
         
-        pubItems.forEach(item => {
+        pubCards.forEach(card => {
             if (filter === 'all') {
-                item.style.display = 'flex';
+                card.style.display = 'flex';
             } else {
-                const categories = item.dataset.category.split(' ');
-                item.style.display = categories.includes(filter) ? 'flex' : 'none';
+                const categories = card.dataset.category.split(' ');
+                card.style.display = categories.includes(filter) ? 'flex' : 'none';
             }
         });
     });
