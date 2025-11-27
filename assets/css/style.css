@@ -612,6 +612,232 @@ img { max-width: 100%; height: auto; }
     .project-item { flex-direction: column; gap: 10px; }
 }
 
+/* ==========================================
+   Latest Research Section - Large Cards
+   ========================================== */
+.research-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 10px;
+}
+
+.research-card-large {
+    display: grid;
+    grid-template-columns: 380px 1fr;
+    gap: 28px;
+    background: white;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.research-card-large:hover {
+    box-shadow: var(--shadow-lg);
+    border-color: rgba(14, 165, 233, 0.3);
+}
+
+.research-media-large {
+    position: relative;
+    height: 100%;
+    min-height: 280px;
+    overflow: hidden;
+    background: var(--bg-alt);
+}
+
+.research-media-large img,
+.research-media-large video,
+.research-media-large iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.research-media-large iframe {
+    border: none;
+}
+
+.media-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.play-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.media-link:hover .play-overlay {
+    opacity: 1;
+}
+
+.play-overlay i {
+    font-size: 3rem;
+    margin-bottom: 8px;
+}
+
+.play-overlay span {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.research-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    padding: 5px 14px;
+    background: rgba(30, 58, 95, 0.9);
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 700;
+    border-radius: 6px;
+    backdrop-filter: blur(4px);
+    z-index: 10;
+}
+
+.research-badge.badge-demo {
+    background: rgba(14, 165, 233, 0.9);
+}
+
+.research-content-large {
+    padding: 24px 24px 24px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.research-content-large h3 {
+    font-size: 1.15rem;
+    color: var(--primary);
+    margin-bottom: 12px;
+    line-height: 1.45;
+}
+
+.research-desc-full {
+    font-size: 0.92rem;
+    color: var(--text-light);
+    line-height: 1.7;
+    margin-bottom: 14px;
+}
+
+.research-highlights {
+    list-style: none;
+    margin-bottom: 14px;
+    padding: 14px;
+    background: var(--bg-alt);
+    border-radius: 8px;
+}
+
+.research-highlights li {
+    font-size: 0.88rem;
+    color: var(--text);
+    padding: 5px 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.research-highlights li i {
+    color: var(--secondary);
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+
+.research-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 14px;
+}
+
+.research-meta span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.research-meta i {
+    color: var(--secondary);
+}
+
+.research-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: auto;
+}
+
+.btn-research {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 18px;
+    background: var(--bg-alt);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text);
+    transition: var(--transition);
+}
+
+.btn-research:hover {
+    background: var(--secondary);
+    border-color: var(--secondary);
+    color: white;
+}
+
+/* Responsive for Research Cards */
+@media (max-width: 900px) {
+    .research-card-large {
+        grid-template-columns: 1fr;
+    }
+    
+    .research-media-large {
+        min-height: 220px;
+        max-height: 250px;
+    }
+    
+    .research-content-large {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .research-media-large {
+        min-height: 180px;
+    }
+    
+    .research-content-large h3 {
+        font-size: 1.05rem;
+    }
+    
+    .research-highlights {
+        padding: 12px;
+    }
+    
+    .research-highlights li {
+        font-size: 0.82rem;
+    }
+}
+
+
+
 @media (max-width: 480px) {
     h1, .profile-info h1 { font-size: 1.6rem; }
     .chinese-name { font-size: 1.1rem; }
