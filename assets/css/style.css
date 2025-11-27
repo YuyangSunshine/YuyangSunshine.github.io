@@ -661,3 +661,282 @@ sup { font-size: 0.65em; color: var(--secondary); }
 .pub-links {
     display: flex;
     gap: 8px;
+}
+
+.pub-links a {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-alt);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--text-light);
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.pub-links a:hover {
+    background: var(--secondary);
+    border-color: var(--secondary);
+    color: white;
+}
+
+/* ==========================================
+   Projects Section
+   ========================================== */
+.project-list {
+    max-width: 800px;
+    margin: 30px auto 0;
+}
+
+.project-item {
+    display: flex;
+    gap: 14px;
+    padding: 20px;
+    background: white;
+    border-radius: var(--radius);
+    margin-bottom: 14px;
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--secondary);
+    box-shadow: var(--shadow-sm);
+    align-items: flex-start;
+    transition: var(--transition);
+}
+
+.project-item:hover {
+    box-shadow: var(--shadow);
+    transform: translateX(4px);
+}
+
+.project-role {
+    flex-shrink: 0;
+    padding: 5px 12px;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.role-pi { background: #dbeafe; color: #1e40af; }
+.role-coi { background: #f3e8ff; color: #7c3aed; }
+
+.project-info { flex: 1; }
+.project-info h4 { font-size: 0.95rem; margin-bottom: 6px; }
+.project-info p { font-size: 0.85rem; color: var(--text-light); margin: 0 0 6px 0; }
+.project-time { font-size: 0.8rem; color: var(--text-muted); }
+
+/* ==========================================
+   Awards Section - 时间线风格
+   ========================================== */
+.awards-timeline {
+    max-width: 700px;
+    margin: 30px auto 0;
+    position: relative;
+    padding-left: 30px;
+}
+
+.awards-timeline::before {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: 10px;
+    bottom: 10px;
+    width: 3px;
+    background: linear-gradient(180deg, var(--secondary), var(--primary-light));
+    border-radius: 3px;
+}
+
+.award-item {
+    position: relative;
+    padding: 16px 0;
+}
+
+.award-item::before {
+    content: '';
+    position: absolute;
+    left: -30px;
+    top: 24px;
+    width: 12px;
+    height: 12px;
+    background: white;
+    border: 3px solid var(--secondary);
+    border-radius: 50%;
+}
+
+.award-item.award-featured::before {
+    background: var(--secondary);
+    box-shadow: 0 0 0 4px rgba(14, 165, 233, 0.2);
+}
+
+.award-year {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--secondary);
+    font-family: monospace;
+    margin-bottom: 8px;
+}
+
+.award-content {
+    display: flex;
+    gap: 14px;
+    padding: 16px 20px;
+    background: white;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+.award-featured .award-content {
+    background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+    border-color: #fbbf24;
+}
+
+.award-item:hover .award-content {
+    box-shadow: var(--shadow);
+}
+
+.award-icon {
+    flex-shrink: 0;
+    font-size: 1.3rem;
+    color: var(--secondary);
+    margin-top: 2px;
+}
+
+.award-featured .award-icon {
+    color: #d97706;
+}
+
+.award-content h4 {
+    font-size: 0.95rem;
+    margin-bottom: 4px;
+}
+
+.award-content p {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    margin: 0;
+}
+
+/* ==========================================
+   Footer
+   ========================================== */
+.footer {
+    padding: 30px 50px;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    background: var(--bg-alt);
+    border-top: 1px solid var(--border);
+}
+
+/* ==========================================
+   Mobile Menu Button
+   ========================================== */
+.mobile-menu-btn {
+    display: none;
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    width: 44px;
+    height: 44px;
+    background: var(--bg-sidebar);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    z-index: 200;
+    box-shadow: var(--shadow);
+}
+
+/* ==========================================
+   Responsive
+   ========================================== */
+@media (max-width: 1100px) {
+    .research-card {
+        grid-template-columns: 320px 1fr;
+    }
+    
+    .section {
+        padding: 50px 30px;
+    }
+}
+
+@media (max-width: 900px) {
+    .sidebar {
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+    }
+    
+    .sidebar.active {
+        transform: translateX(0);
+    }
+    
+    .main-content {
+        margin-left: 0;
+    }
+    
+    .mobile-menu-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .section {
+        padding: 40px 20px;
+    }
+    
+    .research-card {
+        grid-template-columns: 1fr;
+    }
+    
+    .research-media {
+        max-height: 280px;
+    }
+    
+    .research-media img,
+    .research-media video {
+        min-height: 200px;
+    }
+}
+
+@media (max-width: 600px) {
+    .section-title {
+        font-size: 1.3rem;
+    }
+    
+    .info-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .news-item {
+        flex-wrap: wrap;
+    }
+    
+    .pub-item {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .pub-venue {
+        align-self: flex-start;
+    }
+    
+    .project-item {
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .award-content {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    
+    .footer {
+        padding: 24px 20px;
+    }
+}
