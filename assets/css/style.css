@@ -250,7 +250,7 @@ sup { font-size: 0.65em; color: var(--secondary); }
 }
 
 .section {
-    padding: 60px 50px;
+    padding: 40px 50px;
 }
 
 .section:nth-child(even) {
@@ -269,14 +269,14 @@ sup { font-size: 0.65em; color: var(--secondary); }
     width: 50px;
     height: 3px;
     background: var(--secondary);
-    margin: 10px auto 0;
+    margin: 6px auto 0;
     border-radius: 2px;
 }
 
 .section-desc {
     text-align: center;
     color: var(--text-light);
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     font-size: 0.9rem;
 }
 
@@ -425,7 +425,7 @@ sup { font-size: 0.65em; color: var(--secondary); }
 .research-list {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 18px;
     max-width: 900px;
     margin: 0 auto;
 }
@@ -763,10 +763,10 @@ sup { font-size: 0.65em; color: var(--secondary); }
 .project-item {
     display: flex;
     gap: 14px;
-    padding: 20px;
+    padding: 16px 20px;
     background: white;
     border-radius: var(--radius);
-    margin-bottom: 14px;
+    margin-bottom: 12px;
     border: 1px solid var(--border);
     border-left: 4px solid var(--secondary);
     box-shadow: var(--shadow-sm);
