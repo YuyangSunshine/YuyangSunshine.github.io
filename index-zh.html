@@ -116,6 +116,22 @@
                 <h2 class="section-title">最新动态</h2>
                 <div class="news-list">
                     <div class="news-item">
+                        <span class="news-date">2026.03</span>
+                        <span class="news-text">✨ <strong>BioProBench</strong> 数据集划分发布！PQA、ORD、ERR、GEN、REA各任务的官方Train/Test划分已可用。</span>
+                    </div>
+                    <div class="news-item">
+                        <span class="news-date">2026.03</span>
+                        <span class="news-text">🔥 <strong>BioProAgent</strong> 现已上线 <strong>AI4S LAB</strong>！尝试自动化湿实验室实验命令。</span>
+                    </div>
+                    <div class="news-item">
+                        <span class="news-date">2026.03</span>
+                        <span class="news-text">🎉 <strong>BioProAgent</strong> 被 <strong>ICLR 2026 LLA Workshop</strong> 录用！</span>
+                    </div>
+                    <div class="news-item">
+                        <span class="news-date">2026.03</span>
+                        <span class="news-text">📄 <strong>BioProAgent</strong> 预印本已在 <strong>arXiv</strong> 发布！</span>
+                    </div>
+                    <div class="news-item">
                         <span class="news-date">2025.12</span>
                         <span class="news-text">🎉 获得2025年度<strong>深圳市优秀博士后</strong>（50名/年）！</span>
                     </div>
@@ -179,6 +195,34 @@
                 <p class="section-desc">近期预印本、系统演示和进行中的项目</p>
                 
                 <div class="research-list">
+                    <!-- Research Item 0: BioProAgent -->
+                    <article class="research-card">
+                        <div class="research-media">
+                            <img src="assets/images/research/bioproagent.png" alt="BioProAgent" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border: none;">
+                            <span class="research-tag" style="background: #764ba2;">研讨会</span>
+                        </div>
+                        <div class="research-body">
+                            <h3>BioProAgent：神经符号约束下的科学规划框架</h3>
+                            <p>
+                                一个神经符号框架，用确定性有限状态机（FSM）锚定LLM规划，确保湿实验室自动化的可靠性。
+                                在不可逆实验中实现 <strong>95.6% 物理合规性</strong>。
+                            </p>
+                            <ul class="research-highlights">
+                                <li><i class="fas fa-check"></i> <strong>状态增强规划</strong>：设计-验证-纠正工作流，确保硬件合规</li>
+                                <li><i class="fas fa-check"></i> <strong>语义符号接地</strong>：通过符号抽象降低 6 倍 token 消耗</li>
+                                <li><i class="fas fa-check"></i> <strong>95.6% 物理合规性</strong> vs ReAct 的 21.0%</li>
+                            </ul>
+                            <div class="research-footer">
+                                <span class="research-meta"><i class="fas fa-users"></i> 刘宇阳 等 · 2026</span>
+                                <div class="research-links">
+                                    <a href="https://arxiv.org/abs/2603.00876" target="_blank"><i class="ai ai-arxiv"></i> arXiv</a>
+                                    <a href="https://github.com/YuyangSunshine/bioproagent" target="_blank"><i class="fab fa-github"></i> 代码</a>
+                                    <a href="https://yuyangsunshine.github.io/BioPro-Project/" target="_blank"><i class="fas fa-globe"></i> 项目</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    
                     <!-- Research Item 1: AI4S LAB -->
                     <article class="research-card">
                         <div class="research-media">
@@ -243,8 +287,8 @@
                         <div class="research-body">
                             <h3>视觉语言模型的持续学习：超越遗忘的综述与分类体系</h3>
                             <p>
-                                视觉语言模型（VLM）如何在不灾难性遗忘先验知识的情况下持续学习？
-                                我们首次对VLM-CL领域进行系统综述，为开发终身视觉语言系统提供全面的诊断参考。
+                                视觉语言模型（VLM）如何在不灾难性遗忘先验知识的情况下持续学习并保持参数效率？
+                                首次系统评审VLM-CL领域，开发终身视觉语言系统的关键参考。
                             </p>
                             <ul class="research-highlights">
                                 <li><i class="fas fa-lightbulb"></i> 识别三大核心挑战：跨模态特征漂移、共享模块干扰、零样本能力衰减</li>
