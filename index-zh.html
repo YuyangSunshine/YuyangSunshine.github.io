@@ -22,7 +22,7 @@
                     <p class="profile-name-cn">Yuyang Liu, Ph.D.</p>
                     <p class="profile-title">南燕特聘副研究员</p>
                     <p class="profile-affiliation">
-                        <a href="https://www.ece.pku.edu.cn/" target="_blank">信息工程学院</a><br>
+                        <a href="https://www.ece.pku.edu.cn/" target="_blank">科学智能学院</a><br>
                         <a href="https://www.pku.edu.cn/" target="_blank">北京大学深圳研究生院</a>
                     </p>
                 </div>
@@ -57,6 +57,7 @@
 
                 <nav class="sidebar-nav">
                     <a href="#about"><i class="fas fa-user"></i> 关于我</a>
+                    <a href="#join"><i class="fas fa-user-plus"></i> 加入我们</a>
                     <a href="#news"><i class="fas fa-newspaper"></i> 最新动态</a>
                     <a href="#research"><i class="fas fa-flask"></i> 研究进展</a>
                     <a href="#publications"><i class="fas fa-book"></i> 论文成果</a>
@@ -145,6 +146,26 @@
                     </div>
                 </div>
             </section>
+
+            <!-- Join Us Section -->
+            <section id="join" class="section">
+                <h2 class="section-title">加入我们</h2>
+                <div class="about-content">
+                    <p>
+                        欢迎对<strong>持续学习、科学智能体与多智能体系统、AI for Science、具身智能与自主实验</strong>
+                        感兴趣的同学加入我们开展科研实习。
+                    </p>
+                    <p>
+                        我尤其期待与<strong>有热情、有自驱力、充满好奇心</strong>，并愿意持续探索未知问题的同学合作。
+                        相比“已经会什么”，我更看重你的主动性、独立思考能力，以及把想法真正做出来的意愿。
+                        如果你感兴趣，欢迎邮件联系，并附上<strong>个人简历、研究兴趣，以及代表性项目 / 代码 / 论文（如有）</strong>。
+                    </p>
+                    <div class="research-links">
+                        <a href="mailto:sunshineliuyuyang@gmail.com"><i class="fas fa-envelope"></i> 联系我</a>
+                    </div>
+                </div>
+            </section>
+
             <!-- News Section -->
             <section id="news" class="section">
                 <h2 class="section-title">最新动态</h2>
@@ -214,7 +235,7 @@
             <!-- Latest Research Section -->
             <section id="research" class="section">
                 <h2 class="section-title">代表性研究</h2>
-                <p class="section-desc">公开平台、预印本与近期已录用成果</p>
+                <p class="section-desc">公开平台、预印本与代表性研究成果</p>
 
                 <div class="research-list">
                     <!-- Research Item 1: AI4S LAB -->
@@ -274,27 +295,28 @@
                         </div>
                     </article>
 
-                    <!-- Research Item 3: RipplePLM -->
+                    <!-- Research Item 3: Continual Learning for VLMs -->
                     <article class="research-card">
                         <div class="research-media">
-                            <img src="assets/images/research/rippleplm_feature.png" alt="RipplePLM">
-                            <span class="research-tag">NeurIPS 2026</span>
+                            <img src="assets/images/research/clvlm.jpg" alt="Continual Learning for Vision-Language Models">
+                            <span class="research-tag tag-survey">综述 · arXiv</span>
                         </div>
                         <div class="research-body">
-                            <h3>RipplePLM：Structural and Property Decoupling for Protein Mutation Effect Generation</h3>
+                            <h3>视觉语言模型的持续学习：综述与分类体系</h3>
                             <p>
-                                面向蛋白质突变效应生成，将局部结构扰动、远端接触传播与生化属性信号进行解耦建模，
-                                提升突变效应描述的结构与生物属性表征能力。
+                                系统梳理视觉语言模型持续学习中的核心问题，关注跨模态表征漂移、共享模块干扰与零样本能力衰减，
+                                并从问题与评测协议出发构建统一的研究分类体系。
                             </p>
                             <ul class="research-highlights">
-                                <li><i class="fas fa-sitemap"></i> Direct-Distal Cross-Attention 解耦局部与多跳结构证据</li>
-                                <li><i class="fas fa-dna"></i> Property Latent Chain 将专家生化属性监督注入隐空间</li>
-                                <li><i class="fas fa-award"></i> NeurIPS 2026 录用</li>
+                                <li><i class="fas fa-lightbulb"></i> 总结视觉语言模型持续学习中的关键挑战</li>
+                                <li><i class="fas fa-sitemap"></i> 提出面向问题的统一分类体系</li>
+                                <li><i class="fas fa-book-open"></i> 系统整理数据集、评测协议与研究方向</li>
                             </ul>
                             <div class="research-footer">
-                                <span class="research-meta"><i class="fas fa-users"></i> Liuzhenghao Lv, <strong>Yuyang Liu</strong><sup>†</sup>, Yuyang Gao, Li Yuan, Yonghong Tian<sup>†</sup> · 2026</span>
+                                <span class="research-meta"><i class="fas fa-users"></i> 刘宇阳 等 · 2025</span>
                                 <div class="research-links">
-                                    <span><i class="fas fa-award"></i> NeurIPS 2026</span>
+                                    <a href="https://arxiv.org/pdf/2508.04227" target="_blank"><i class="ai ai-arxiv"></i> arXiv</a>
+                                    <a href="https://github.com/YuyangSunshine/Awesome-Continual-learning-of-Vision-Language-Models" target="_blank"><i class="fab fa-github"></i> GitHub</a>
                                 </div>
                             </div>
                         </div>
@@ -595,7 +617,7 @@
                                 </div>
                             </div>
             
-                            <div class="pub-card" data-category="journal topic-cl">
+                            <div class="pub-card" data-category="journal topic-cl topic-embodied">
                                 <div class="pub-venue venue-journal">IEEE TNNLS</div>
                                 <div class="pub-main">
                                     <h4 class="pub-title">Open-ended Online Learning for Autonomous Visual Perception</h4>
@@ -617,7 +639,19 @@
                         <div class="pub-year-label">2022</div>
                         <div class="pub-year-content">
                             
-                            <div class="pub-card" data-category="first journal topic-embodied">
+
+                            <div class="pub-card" data-category="first conference topic-cl topic-embodied">
+                                <div class="pub-venue venue-conf">IROS</div>
+                                <div class="pub-main">
+                                    <h4 class="pub-title">Class-Incremental Gesture Recognition Learning with Out-of-Distribution Detection</h4>
+                                    <p class="pub-authors">
+                                        M Li<sup>*</sup>, Y Cong, <u>Y Liu</u><sup>*</sup>, G Sun
+                                    </p>
+                                    <p class="pub-venue-full">IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2022</p>
+                                </div>
+                            </div>
+
+                            <div class="pub-card" data-category="first journal topic-cl topic-embodied">
                                 <div class="pub-venue venue-journal">IEEE TCSVT</div>
                                 <div class="pub-main">
                                     <h4 class="pub-title">Lifelong Visual-Tactile Spectral Clustering for Robotic Object Perception</h4>
@@ -850,6 +884,23 @@
     </button>
 
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/news-toggle-fix.js"></script>
+
+    <script>
+    (function () {
+        var btn = document.getElementById('show-more-news');
+        if (!btn) return;
+        var extra = Array.prototype.slice.call(document.querySelectorAll('[data-news-extra="true"]'));
+        btn.addEventListener('click', function (event) {
+            event.preventDefault();
+            event.stopImmediatePropagation();
+            var expanded = btn.getAttribute('aria-expanded') === 'true';
+            extra.forEach(function (item) {
+                item.classList.toggle('hidden-news', expanded);
+            });
+            btn.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+            btn.textContent = expanded ? '显示更多' : '收起';
+        }, true);
+    })();
+    </script>
 </body>
 </html>
