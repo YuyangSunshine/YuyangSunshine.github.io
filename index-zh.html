@@ -145,7 +145,6 @@
                     </div>
                 </div>
             </section>
-
             <!-- News Section -->
             <section id="news" class="section">
                 <h2 class="section-title">最新动态</h2>
@@ -160,7 +159,16 @@
                     </div>
                     <div class="news-item">
                         <span class="news-date">2026.07</span>
-                        <span class="news-text"><strong>LabEvolver</strong> 预印本发布于 <strong>arXiv</strong>，探索机器人湿实验中的训练自由经验演化。</span>
+                        <span class="news-text"><strong>LabEvolver</strong> 预印本发布于 <strong>arXiv</strong>。</span>
+                    </div>
+                    <div class="news-item">
+                        <span class="news-date">2026.05</span>
+                        <span class="news-text"><strong>BioProBench</strong> 被 <strong>ICML 2026</strong> 录用！</span>
+                    </div>
+                    <div class="news-item">
+                        <span class="news-date">2026.04</span>
+                        <span class="news-badge badge-oral">Oral</span>
+                        <span class="news-text"><strong>BioProAgent</strong> 被 <strong>ACL 2026</strong> 录用，并获 <strong>Oral</strong>！</span>
                     </div>
                     <div class="news-item">
                         <span class="news-date">2025.12</span>
@@ -170,38 +178,38 @@
                         <span class="news-date">2025.11</span>
                         <span class="news-text">一篇关于<strong>主动学习</strong>的论文被 <strong>IJCV</strong> 录用！</span>
                     </div>
-                    <div class="news-item">
+                    <div class="news-item hidden-news" data-news-extra="true">
                         <span class="news-date">2025.11</span>
                         <span class="news-badge badge-oral">Oral</span>
                         <span class="news-text">一篇关于<strong>大语言模型安全</strong>的论文被 <strong>AAAI 2026</strong> 录用！</span>
                     </div>
-                    <div class="news-item hidden-news">
+                    <div class="news-item hidden-news" data-news-extra="true">
                         <span class="news-date">2025.11</span>
                         <span class="news-text">一篇关于<strong>多模态大模型推理</strong>的论文被 <strong>AAAI 2026</strong> 录用！</span>
                     </div>
-                    <div class="news-item hidden-news">
+                    <div class="news-item hidden-news" data-news-extra="true">
                         <span class="news-date">2024.12</span>
                         <span class="news-text">一篇论文被 <strong>ICLR 2025</strong> 录用！</span>
                     </div>
-                    <div class="news-item hidden-news">
+                    <div class="news-item hidden-news" data-news-extra="true">
                         <span class="news-date">2024.12</span>
                         <span class="news-badge badge-oral">Oral</span>
                         <span class="news-text">一篇论文被 <strong>COLING 2025</strong> 录用！</span>
                     </div>
-                    <div class="news-item hidden-news">
+                    <div class="news-item hidden-news" data-news-extra="true">
                         <span class="news-date">2024.11</span>
                         <span class="news-text">获得<strong>中国博士后科学基金第76批面上资助</strong>！</span>
                     </div>
-                    <div class="news-item hidden-news">
+                    <div class="news-item hidden-news" data-news-extra="true">
                         <span class="news-date">2024.07</span>
                         <span class="news-text">一篇论文被 <strong>ECCV 2024</strong> 录用！</span>
                     </div>
-                    <div class="news-item hidden-news">
+                    <div class="news-item hidden-news" data-news-extra="true">
                         <span class="news-date">2024.06</span>
                         <span class="news-text">🎉 入选<strong>博士后创新人才支持计划（A类）</strong>！</span>
                     </div>
                 </div>
-                <button class="btn-show-more" id="show-more-news">显示更多</button>
+                <button class="btn-show-more" id="show-more-news" type="button" aria-expanded="false">显示更多</button>
             </section>
             <!-- Latest Research Section -->
             <section id="research" class="section">
@@ -240,7 +248,9 @@
                     <!-- Research Item 2: LabEvolver -->
                     <article class="research-card">
                         <div class="research-media">
-                            <img src="assets/images/research/labevolver_feature.png" alt="LabEvolver">
+                            <video autoplay loop muted playsinline preload="metadata" poster="assets/images/research/labevolver_feature.png">
+                                <source src="https://github.com/AndyGao6186/LabEvolver/releases/download/video-1080p-logo-0821/LabEvolver.1080P.LOGO.mp4" type="video/mp4">
+                            </video>
                             <span class="research-tag">arXiv</span>
                         </div>
                         <div class="research-body">
@@ -840,5 +850,6 @@
     </button>
 
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/news-toggle-fix.js"></script>
 </body>
 </html>
