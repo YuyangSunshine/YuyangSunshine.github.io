@@ -57,6 +57,7 @@
 
                 <nav class="sidebar-nav">
                     <a href="#about"><i class="fas fa-user"></i> About</a>
+                    <a href="#join"><i class="fas fa-user-plus"></i> Join Us</a>
                     <a href="#news"><i class="fas fa-newspaper"></i> News</a>
                     <a href="#research"><i class="fas fa-flask"></i> Research</a>
                     <a href="#publications"><i class="fas fa-book"></i> Publications</a>
@@ -149,6 +150,28 @@
                     </div>
                 </div>
             </section>
+
+            <!-- Join Us Section -->
+            <section id="join" class="section">
+                <h2 class="section-title">Join Us</h2>
+                <div class="about-content">
+                    <p>
+                        We welcome students interested in <strong>continual learning, scientific agents and multi-agent systems,
+                        AI for Science, embodied AI, and autonomous experimentation</strong> to join us for research internships.
+                    </p>
+                    <p>
+                        I particularly enjoy working with students who are <strong>passionate, self-motivated, and curious</strong>,
+                        and who are willing to explore open-ended research problems. I care more about your initiative,
+                        independent thinking, and willingness to turn ideas into working systems than about having a perfectly matched background.
+                        If you are interested, please email me with your <strong>CV, research interests, and representative projects,
+                        code, or publications (if available)</strong>.
+                    </p>
+                    <div class="research-links">
+                        <a href="mailto:sunshineliuyuyang@gmail.com"><i class="fas fa-envelope"></i> Contact Me</a>
+                    </div>
+                </div>
+            </section>
+
             <!-- News Section -->
             <section id="news" class="section">
                 <h2 class="section-title">News</h2>
@@ -278,27 +301,28 @@
                         </div>
                     </article>
 
-                    <!-- Research Item 3: RipplePLM -->
+                    <!-- Research Item 3: Continual Learning for VLMs -->
                     <article class="research-card">
                         <div class="research-media">
-                            <img src="assets/images/research/rippleplm_feature.png" alt="RipplePLM">
-                            <span class="research-tag">NeurIPS 2026</span>
+                            <img src="assets/images/research/clvlm.jpg" alt="Continual Learning for Vision-Language Models">
+                            <span class="research-tag tag-survey">Survey · arXiv</span>
                         </div>
                         <div class="research-body">
-                            <h3>RipplePLM: Structural and Property Decoupling for Protein Mutation Effect Generation</h3>
+                            <h3>Continual Learning for Vision-Language Models: A Survey and Taxonomy</h3>
                             <p>
-                                A mutation-aware protein language framework that separates local structural perturbation, distal contact-mediated effects,
-                                and biochemical-property signals for mutation effect generation.
+                                A systematic study of continual learning for vision-language models, focusing on cross-modal representation drift,
+                                interference in shared modules, and degradation of zero-shot capabilities, with a unified problem-driven taxonomy.
                             </p>
                             <ul class="research-highlights">
-                                <li><i class="fas fa-sitemap"></i> Direct-Distal Cross-Attention separates local and multi-hop structural evidence</li>
-                                <li><i class="fas fa-dna"></i> Property Latent Chain injects expert-guided biochemical supervision into latent states</li>
-                                <li><i class="fas fa-award"></i> Accepted to NeurIPS 2026</li>
+                                <li><i class="fas fa-lightbulb"></i> Identifies key challenges in continual vision-language learning</li>
+                                <li><i class="fas fa-sitemap"></i> Proposes a problem-driven taxonomy</li>
+                                <li><i class="fas fa-book-open"></i> Reviews datasets, protocols, metrics, and future directions</li>
                             </ul>
                             <div class="research-footer">
-                                <span class="research-meta"><i class="fas fa-users"></i> Liuzhenghao Lv, <strong>Yuyang Liu</strong><sup>†</sup>, Yuyang Gao, Li Yuan, Yonghong Tian<sup>†</sup> · 2026</span>
+                                <span class="research-meta"><i class="fas fa-users"></i> Yuyang Liu, et al. · 2025</span>
                                 <div class="research-links">
-                                    <span><i class="fas fa-award"></i> NeurIPS 2026</span>
+                                    <a href="https://arxiv.org/pdf/2508.04227" target="_blank"><i class="ai ai-arxiv"></i> arXiv</a>
+                                    <a href="https://github.com/YuyangSunshine/Awesome-Continual-learning-of-Vision-Language-Models" target="_blank"><i class="fab fa-github"></i> GitHub</a>
                                 </div>
                             </div>
                         </div>
@@ -599,7 +623,7 @@
                                 </div>
                             </div>
             
-                            <div class="pub-card" data-category="journal topic-cl">
+                            <div class="pub-card" data-category="journal topic-cl topic-embodied">
                                 <div class="pub-venue venue-journal">IEEE TNNLS</div>
                                 <div class="pub-main">
                                     <h4 class="pub-title">Open-ended Online Learning for Autonomous Visual Perception</h4>
@@ -621,7 +645,19 @@
                         <div class="pub-year-label">2022</div>
                         <div class="pub-year-content">
                             
-                            <div class="pub-card" data-category="first journal topic-embodied">
+
+                            <div class="pub-card" data-category="first conference topic-cl topic-embodied">
+                                <div class="pub-venue venue-conf">IROS</div>
+                                <div class="pub-main">
+                                    <h4 class="pub-title">Class-Incremental Gesture Recognition Learning with Out-of-Distribution Detection</h4>
+                                    <p class="pub-authors">
+                                        M Li<sup>*</sup>, Y Cong, <u>Y Liu</u><sup>*</sup>, G Sun
+                                    </p>
+                                    <p class="pub-venue-full">IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2022</p>
+                                </div>
+                            </div>
+
+                            <div class="pub-card" data-category="first journal topic-cl topic-embodied">
                                 <div class="pub-venue venue-journal">IEEE TCSVT</div>
                                 <div class="pub-main">
                                     <h4 class="pub-title">Lifelong Visual-Tactile Spectral Clustering for Robotic Object Perception</h4>
@@ -855,6 +891,23 @@
     </button>
 
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/news-toggle-fix.js"></script>
+
+    <script>
+    (function () {
+        var btn = document.getElementById('show-more-news');
+        if (!btn) return;
+        var extra = Array.prototype.slice.call(document.querySelectorAll('[data-news-extra="true"]'));
+        btn.addEventListener('click', function (event) {
+            event.preventDefault();
+            event.stopImmediatePropagation();
+            var expanded = btn.getAttribute('aria-expanded') === 'true';
+            extra.forEach(function (item) {
+                item.classList.toggle('hidden-news', expanded);
+            });
+            btn.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+            btn.textContent = expanded ? 'Show More' : 'Show Less';
+        }, true);
+    })();
+    </script>
 </body>
 </html>
